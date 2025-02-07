@@ -1,10 +1,7 @@
 import warnings
 warnings.filterwarnings('ignore')
 import aiohttp
-
-WEATHER_API = "1c37661d92f5c05d4a9758b52c3d9e30"
-FOOD_API_ID="efd30dca"
-FOOD_API_KEY="5dddb96e08298605579dc7df072801ee"
+from config import WEATHER_API, FOOD_API_ID, FOOD_API_KEY
       
 async def get_weather_info(city, api_key=WEATHER_API):
    url = "http://api.openweathermap.org/data/2.5/weather"
